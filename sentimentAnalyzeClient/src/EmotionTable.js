@@ -9,9 +9,15 @@ class EmotionTable extends React.Component {
           <table className="table table-bordered">
             <tbody>
             {
-              /*Write code to use the .map method that you worked on in the 
-              Hands-on React lab to extract the emotions. If you are stuck,
-              please click the instructions to see how to implement a map*/
+              Object.entries(this.props.emotions).map(function(mapentry) {
+                return (
+                    <tr>
+                    <td>{mapentry[0]}</td>
+                    <td>{mapentry[1]}</td>
+                    </tr>
+                    
+                        )
+                    })
             }
             </tbody>
           </table>
@@ -21,3 +27,21 @@ class EmotionTable extends React.Component {
     
 }
 export default EmotionTable;
+
+
+                    /* <tr>
+                    <td>{mapentry[2]}</td>
+                    <td>{mapentry[3]}</td>
+                    </tr>
+                    <tr>
+                    <td>{mapentry[4]}</td>
+                    <td>{mapentry[5]}</td>
+                    </tr>
+                    <tr>
+                    <td>{mapentry[6]}</td>
+                    <td>{mapentry[7]}</td>
+                    </tr>
+                    <tr>
+                    <td>{mapentry[8]}</td>
+                    <td>{mapentry[9]}</td>
+                    </tr> */
